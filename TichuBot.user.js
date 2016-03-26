@@ -1,3 +1,13 @@
+// ==UserScript==
+// @name         TichuIQ Bot
+// @namespace    http://your.homepage/
+// @version      0.1
+// @description  enter something useful
+// @author       You
+// @match        http://tichuiq.com/public_html/game.php
+// @grant        none
+// ==/UserScript==
+// This script automatically "plays" tichu.
 setInterval(function(){
 	$.get('http://tichuiq.com/public_html/get_game_data.php').then(function(r){
 			var r = JSON.parse(r); 
